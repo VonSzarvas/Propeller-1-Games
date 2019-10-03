@@ -57,9 +57,11 @@ PRI update_drought(piece) | i
 PRI refill_piece | highest,i ' Find piece with highest drought value
   highest~~
   repeat i from 0 to 6
-    if drought[i] => highest
+    if drought[i] > highest
       highest := drought[i]
       result := i
+    elseif drought[i] == highest ' tiebreaker
+      return (seed>>23)//7
 
 PRI drawdebug(piece,select) | i,screen
   screen:= LONG[CONSTANT($7F00-8)]
