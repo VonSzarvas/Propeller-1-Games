@@ -1162,7 +1162,7 @@ byte "2 PLAYER - BATTLE",0
 TitleText
 byte "SPINTRIS",0
 DateText
-byte "02 OCT 2019 - JT COOK & ADA G.",0
+byte "03 OCT 2019 - JT COOK & ADA G.",0
 DemoText
 byte "WWW.AVALONDREAMS.COM",0
 PauseText
